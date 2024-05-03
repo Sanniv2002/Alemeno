@@ -40,3 +40,7 @@ Follow these steps to set up the Course Listing project locally:
    ```
    npm run dev
    ```
+
+# API Reference
+
+I have deployed a REST API at [https://course.up.railway.app/courses](-https://course.up.railway.app/courses) this also has endpoints such as [https://course.up.railway.app/courses/1](-https://course.up.railway.app/courses/1) on which on a GET Request, the API responds back with all the courses and the particular course respectively. Moreover a put request on [https://course.up.railway.app/courses/like?id=102](-https://course.up.railway.app/courses/like?id=102) will increase the number of likes on that particular course.
