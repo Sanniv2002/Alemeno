@@ -5,7 +5,7 @@ Here is a demonstration video to the project:
 
 ### Prerequisites
 
-Before setting up the3 project locally, ensure that you have the following software installed:
+Before setting up the project locally, ensure that you have the following software installed:
 
 - [Node.js](https://nodejs.org/) (v14 or higher)
 
