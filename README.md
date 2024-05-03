@@ -43,4 +43,19 @@ Follow these steps to set up the Course Listing project locally:
 
 ### API Reference
 
-I have deployed a REST API at [https://course.up.railway.app/courses](-https://course.up.railway.app/courses) this also has endpoints such as [https://course.up.railway.app/courses/1](-https://course.up.railway.app/courses/1) on which on a GET Request, the API responds back with all the courses and the particular course respectively. Moreover a put request on [https://course.up.railway.app/courses/like?id=102](-https://course.up.railway.app/courses/like?id=102) will increase the number of likes on that particular course.
+I have deployed this REST API on Railway as a dummy API.
+
+## API Endpoints
+
+- Base URL: `https://course.up.railway.app`
+
+### Courses
+
+- GET all courses: [https://course.up.railway.app/courses](https://course.up.railway.app/courses)
+- GET a specific course: [https://course.up.railway.app/courses/1](https://course.up.railway.app/courses/1)
+
+#### Like a Course
+
+- PUT request to like a course (provide the course ID in the query parameter `id`): [https://course.up.railway.app/courses/like?id=102](https://course.up.railway.app/courses/like?id=102)
+
+
