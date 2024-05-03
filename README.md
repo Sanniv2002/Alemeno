@@ -1,7 +1,7 @@
 # Alemeno Assignment
 
 Here is a demonstration video to the project:
-- [](https://drive.google.com/file/d/1Ky9Ll8nzApiGu4tBUrUi7cyFt6lrp_cs/view?usp=sharing)
+- [Google Drive](https://drive.google.com/file/d/1Ky9Ll8nzApiGu4tBUrUi7cyFt6lrp_cs/view?usp=sharing)
 
 ### Prerequisites
 
