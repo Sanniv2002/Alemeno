@@ -20,14 +20,14 @@ export default function StudentInfo() {
   }, []);
 
   return (
-    <div className="py-10 px-20">
-      <h2 className="text-white font-bold underline text-3xl">
+    <div className="py-10 sm:px-20">
+      <h2 className="text-white font-bold underline text-3xl ps-5 sm:ps-0">
         Matthew Miller
       </h2>
-      <h2 className="text-white pt-5 text-xl">Courses Enrolled:</h2>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 my-5  mx-5">
+      <h2 className="text-white pt-5 text-xl ps-5 sm:ps-0">Courses Enrolled:</h2>
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 my-5 mx-5">
         {enrolled?.map((course: courseModel, index: number) => (
-          <span key={course?.id as React.Key}>
+          <span className="bg-gray-500 pb-3 px-2 rounded-lg" key={course?.id as React.Key}>
             <CourseCard course={course} />
             <button
               onClick={() => {
@@ -36,7 +36,7 @@ export default function StudentInfo() {
                 setCompleted(updatedCompleted);
               }}
               type="button"
-              className={`mt-2 py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none rounded-3xl transition-colors duration-300 hover:text-white ${completed[index]? "bg-green-500 hover:bg-green-700":"bg-gray-500 hover:bg-gray-700"}`}
+              className={`mt-2 py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none rounded-3xl transition-colors duration-300 hover:text-white ${completed[index]? "bg-green-500 hover:bg-green-700":"bg-gray-700 hover:bg-gray-900"}`}
             >
               {!completed[index]?"Mark as completed":"Completed!"}
             </button>
