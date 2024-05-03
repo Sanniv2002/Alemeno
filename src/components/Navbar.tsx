@@ -1,10 +1,11 @@
-import { useSetRecoilState } from "recoil";
+import { useRecoilValue, useSetRecoilState } from "recoil";
 import Avatar from "../assets/profile-picture-5.jpg"
 import { queryAtom } from "../store/atoms/courses";
 import { useNavigate } from "react-router-dom";
 
 export default function Navbar(props: { isActive: boolean }) {
     const setSearch = useSetRecoilState(queryAtom)
+    const search = useRecoilValue(queryAtom)
     const navigate = useNavigate()
   return (
     <div className="bg-gray-900 flex justify-between px-5">
@@ -12,6 +13,7 @@ export default function Navbar(props: { isActive: boolean }) {
       <div className="flex my-5 gap-2">
         {props.isActive ? (
           <input
+          defaultValue={search}
           onChange={(e) => setSearch(e.target.value)}
             className="pl-2 w-28 sm:w-52 bg-gray-500 rounded-md text-white hover:bg-gray-600 transition-colors duration-300 focus:bg-gray-600"
             placeholder="search"
